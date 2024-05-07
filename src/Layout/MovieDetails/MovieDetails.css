@@ -1,0 +1,28 @@
+.center-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .card {
+    width: 400px;
+    height: auto; /* Adjust the width as needed */
+  }
+  .ss{
+    font-weight: bolder;
+  }
+  
+  
+  .text-light {
+    color: #fff; 
+  }
+  
+  .w-100 {
+    width: 100%; 
+  }
+ 
+  
+  .btn:hover {
+    cursor: pointer; 
+  }
