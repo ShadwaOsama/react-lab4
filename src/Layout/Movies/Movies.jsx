@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import MoviesPagination from "./MoviesPagination";
 import { useDispatch } from "react-redux";
 import { addToFavorites, removeFromFavorites } from "../../store/cartAction";
+import { getAllMovies } from "../../store/slices/MoviesSlice";
+
 
 export default function Movies() {
   const [movies, setMovies] = useState([]);
@@ -50,6 +52,10 @@ export default function Movies() {
       });
   }, []);
 
+  useEffect(() => {
+    dispatch(getAllMovies());
+  }, [dispatch]);
+ 
   return (
     <div className="container">
       <h2 className="text-center mb-5" style={{ fontSize: "2.5rem", color: "#f00"}}>
